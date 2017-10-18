@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.meicam.sdk.NvsLiveWindow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/liveWindow"/>
+
+    <Button
+        android:text="@string/close"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonOpen"
+        android:layout_width="wrap_content"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:minHeight="30dp"
+        android:layout_marginLeft="@dimen/layout_horizontal_margin"
+        android:layout_marginBottom="130dp"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:text="@string/reddening"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/layout_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textReddening" />
+
+        <SeekBar
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarReddening" />
+
+        <TextView
+            android:text="0.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_horizontal_margin"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textReddeningValue" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:text="@string/whitening"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/layout_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textWhitening" />
+
+        <SeekBar
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarWhitening" />
+
+        <TextView
+            android:text="0.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_horizontal_margin"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textWhiteningValue" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:text="@string/strength"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/layout_horizontal_margin"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textStrength" />
+
+        <SeekBar
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarStrength" />
+
+        <TextView
+            android:text="0.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/layout_horizontal_margin"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/textStrengthValue" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</LinearLayout>

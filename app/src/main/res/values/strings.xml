@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">短视频</string>
+
+
+    <string name="open">开启美颜</string>
+    <string name="close">关闭美颜</string>
+    <string name="strength">磨皮</string>
+    <string name="whitening">美白</string>
+    <string name="reddening">红润</string>
+</resources>
